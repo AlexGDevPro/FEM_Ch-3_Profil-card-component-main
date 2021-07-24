@@ -1,4 +1,135 @@
+/*--------------------FONT IMPORT--------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/*--------------------GENERALS--------------------*/
+/* Variables */
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+    /* HTMLElement */
+body{
+    font-size: 18px;
+    color: var(--very-dark-desaturated-blue);
+    font-family: 'Kumbh Sans', sans-serif;
+    background: 
+        url('../images/bg-pattern-top.svg') no-repeat right 50vw top -50vh,
+        url('../images/bg-pattern-bottom.svg')  no-repeat left 50vw top 50vh,
+        var(--dark-cyan);
+    background-size: 100vh;
+}
+
+/* Generals classes */
+.dark-gray{
+    color: var(--dark-gray);
+}
+
+
+
+/*--------------------MAIN WRAPPER--------------------*/
+.main-wrapper{
+    width: 320px;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 2px 2px 8px var(--dark-grayish-blue);
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Top Container */
+.container{
+    padding: 85px 0 25px;
+    background: url('../images/bg-pattern-card.svg') top center no-repeat;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+/* Container small */
+.container-sml{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+/* Profil's picture */
+.profil-pic{
+    margin: auto;
+    text-align: center;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+    overflow: hidden;
+}
+
+.profil-pic img{
+    width: 100%;
+}
+
+/* Profil's title */
+.profil-title{
+    margin: 30px 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.profil-title .name{
+    font-size: 1.3rem;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.profil-title .age{
+    margin: 0;
+}
+
+/* Profil's localisation */
+.profil-localisation p{
+    margin: 0;
+}
+
+/* Container large */
+.container-lrg{
+    box-sizing: border-box;
+    padding: 30px 0 25px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Stats part */
+.stats{
+    text-align: center;
+}
+
+.stats-value, .stats-title{
+    margin: 0;
+}
+
+.stats-value{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.stats-title{
+    font-size: .7rem;
+    letter-spacing: 1px;
+}
+
+/* FrontEnd Mentor Foot */
 .attribution{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 11px;
     text-align: center;
 }
